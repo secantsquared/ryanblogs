@@ -7,6 +7,19 @@
   padding: 1.5rem 0;
 }
 
+.homebtn {
+  margin-top: 10px;
+  max-height: 200px;
+  max-width: 200px;
+  justify-self: center;
+}
+
+.btncont {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 .markdown p,
 .markdown ul,
 .markdown ol {
@@ -49,7 +62,7 @@ ol {
   flex-flow: row;
   padding: 1.5rem 0;
   margin: 1rem auto 1rem 4rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .suggestions .card {

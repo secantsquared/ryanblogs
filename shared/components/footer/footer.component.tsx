@@ -3,11 +3,7 @@ import './footer.component.css';
 
 type Props = {};
 const Footer: FunctionComponent<Props> = ({}) => {
-  return (
-    <footer>
-      <span className="dev-team">RB 2019</span>
-    </footer>
-  );
+  return <footer></footer>;
 };
 
 export default Footer;

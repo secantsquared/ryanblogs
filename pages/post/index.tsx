@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Link from 'next/link';
 import React from 'react';
 import './styles.css';
 import ReactMarkdown from 'react-markdown';
@@ -41,7 +42,11 @@ const PostPage = (props: Props) => {
         </div>
         <ReactMarkdown className="markdown" source={props.article.body} />
       </div>
-      <div className="suggestions">{renderCards(props.suggestedArticles)}</div>
+      <Link href="/">
+        <div className="btncont">
+          <img className="homebtn" src="home.png" alt="home" />
+        </div>
+      </Link>
     </Layout>
   );
 };
