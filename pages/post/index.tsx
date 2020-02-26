@@ -21,7 +21,7 @@ const renderCards = suggestions =>
   ));
 const PostPage = (props: Props) => {
   const postMetaTags: MetaTags = {
-    canonical: `${process.env.DOMAIN_PUBLIC}`,
+    canonical: 'ryanboriswrites.codes',
     description: `${props.article.description}`,
     // contentful does not set the http or https before an image link, so we need to add it ourselves
     image: `https:${props.article.heroImage.url}`,
