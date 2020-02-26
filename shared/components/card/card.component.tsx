@@ -21,19 +21,17 @@ const Card: FunctionComponent<Props> = ({ info }) => {
   };
 
   return (
-    <div className="card">
-      <div className="card__header" style={cardBGStyles} />
-      <div className="card__body">
-        <h3 className="card__title">{info.title}</h3>
-        <p className="card__text">{info.description}</p>
-      </div>
+    <Link href={getHref(info.slug)} as={getNavigationLink(info.slug)}>
+      <div className="card">
+        <div className="card__header" style={cardBGStyles} />
+        <div className="card__body">
+          <h3 className="card__title">{info.title}</h3>
+          <p className="card__text">{info.description}</p>
+        </div>
 
-      <div className="card__footer">
-        <Link href={getHref(info.slug)} as={getNavigationLink(info.slug)}>
-          <a className="card__action">Explore</a>
-        </Link>
+        <div className="card__footer"></div>
       </div>
-    </div>
+    </Link>
   );
 };
 
