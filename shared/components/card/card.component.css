@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-
+  cursor: pointer;
   background-color: #fff;
   border-radius: 10px;
   border: 3px solid #e5e5e5;
