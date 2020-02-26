@@ -35,3 +35,9 @@
     padding: 1.5rem 4rem;
   }
 }
+
+@media (max-width: 440px) {
+  .brand__logo {
+    max-width: 90%;
+  }
+}
