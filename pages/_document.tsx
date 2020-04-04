@@ -35,7 +35,7 @@ export default class extends Document<Props> {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <base href="/" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+          <meta name="google-site-verification" content="3S19Ww5D03xBkpmO6BJo8KClD_AGWUuUg4mcy-ZQPJ0" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           {/* We only want to add the scripts if in production */}
           {isProduction && (
